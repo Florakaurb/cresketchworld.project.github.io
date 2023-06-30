@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/76901c1c8a.js" crossorigin="anonymous"></script>
+  <title>HOME</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+      
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+  </script>
+  
+  <style>
+  body{
+      background-image: url("https://img.freepik.com/premium-vector/colorful-pastel-watercolor-background_3785-169.jpg?w=2000");
+      background-size: cover;
+
+    }
+    h1{
+      font-family: 'Dancing Script', cursive;
+    }
+    .carousel-item {
+    top: 70px;
+   }
+ 
+
+    /* Prevent image stretching as it's resized */
+.card-img-top {
+    object-fit: cover;
+}
+
+/* Make all cards in row the same height */
+.row {
+   display: flex;
+   flex-wrap: wrap;
+
+}
+
+.row > div[class*='col-'] {
+  display: flex;
+
+}
+
+
+/* Responsive design for image heights */
+@media (min-width: 576px) { 
+  .card-img-top {
+    height: 50vw;
+  }
+}
+
+@media (min-width: 768px) { 
+  .card-img-top {
+    height: 30vw;
+  }
+}
+
+@media (min-width: 992px) { 
+  .card-img-top {
+    height: 20vw;
+  }
+}
+
+@media (min-width: 1200px) { 
+  .card-img-top {
+    height: 20vw;
+  }
+}
+
+    
+}
+
+.card {
+    border-radius:0;
+    margin:10px auto;
+}
+/*.card-title {
+  text-transform: uppercase;
+  color: #E44424;
+}*/
+
+/*.card-text {
+  margin-top:10px;
+  margin-bottom: 10px;
+  background-color:#FFFFFF;
+  color:#000000;
+}*/
+
+/*hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}*/
+
+section {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 0;
+  position: relative;
+  margin-top: 10px;
+
+
+}
+section img {
+  width: 100%;
+}
+section article {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  mix-blend-mode: lighten;
+
+}
+section div {
+  background: black;
+  height: 25.3vw;
+}
+section div:nth-of-type(2) {
+  grid-column: 2 / 4;
+}
+  a{
+  text-decoration: none;
+  color: white;
+}
+
+.logos{
+  height: 100px;
+  width: 100px;
+  z-index: 2;
+  position: absolute;
+  background-color:white;
+  background-image: url("csworldlogo.png");
+  background-size: cover;
+  top: 0px ;
+  border-radius: 0px 0px 30px 30px;
+  box-shadow: 5px 5px 5px gray;
+  opacity: ;
+}
+.cre{
+  font-style:italic;
+  color: white;
+  margin-left: 110px;
+  font-size:25px;
+   
+}
+
+/* #scroll {
+    position:fixed;
+    z-index: 9;
+    right:10px;
+    bottom:20px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#ffc107;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+
+
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+
+
+
+}
+#scroll:hover {
+    background-color:#023020;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+
+
+.fa-facebook:hover{
+  cursor: pointer;
+  color: #5851DB;
+}
+
+
+.fa-instagram:hover{
+  cursor: pointer;
+  color: purple;
+}
+
+.fa-youtube:hover{
+  cursor: pointer;
+  color: #FF0000;
+}
+
+
+a {
+  text-decoration: none;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 3;
+}
+
+p {
+  color: white;
+  margin: 0px;
+}
+
+.sidebar {
+  height: auto;
+  width: 0px;
+  position: fixed;
+  text-align: center;
+  top: 35vh;
+  padding: 10px;
+}
+
+p i {
+  left: 30px;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 24px;
+}
+
+.social {
+  margin-left: -200px;
+  width: 230px;
+  padding: 0;
+  display: inline-table;
+  height: 0px;
+  background-color: rgba(128, 128, 128, 0.73);
+  -moz-transition-property: margin-left;
+  -moz-transition-duration: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -ms-transition-property: margin-left;
+  -ms-transition-duration: 0.2s;
+  -ms-transition-delay: 0.2s;
+  -o-transition-property: margin-left;
+  -o-transition-duration: 0.2s;
+  -o-transition-delay: 0.2s;
+  -webkit-transition-property: margin-left;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s;
+  box-shadow: 0px 0px 6px 0px #3E3D3D;
+  cursor: pointer;
+}*/
+/*
+.social:hover {
+  margin-left: -30px;
+  width: 230px;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.twitter {
+  background-color: #4099FF;
+}
+
+.google {
+  background-color: #DD4B39;
+}
+
+.linkedin p i {
+  left: 20px;
+}
+
+.google p i {
+  left: 35px;
+}
+
+.youtube p i {
+  left: 18px;
+}
+
+.youtube:hover {
+  background-color: #E52D27;
+}
+
+.linkedin:hover {
+  background-color: #0976B4;
+}*/
+
+
+
+
+
+
+
+
+
+
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="#" id="scroll" style="display: none;"><span></span></a>
+
+<header>  
+<nav class="navbar navbar-expand-lg navbar-light bg-danger px-2 fixed-top my-1 ">
+  <div class="container-fluid  bg-danger">
+    <a class="navbar-brand " href="index.html"><div class="cre">cresketchworld</div></a><div class="logos"></div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
+        <li class="nav-item">
+          <a class="nav-link active text-warning" aria-current="page" href="index.html">Home</a>
+
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Art Gallery
+          </a>
+          <ul class="dropdown-menu text-center" aria-labelledby="Art Gallery">
+            <li><a class="dropdown-item" href="WaterColor Portrait.html">WaterColor Portrait</a></li>
+             <li><a class="dropdown-item" href="portrait.html">Portrait</a></li>
+            <li><a class="dropdown-item" href="drawings.html">Drawing</a></li>
+            <li><a class="dropdown-item" href="painting.html">Painting</a></li>
+          </ul>
+        </li>
+      
+
+        <li class="nav-item">
+          <a class="nav-link text-light" href="About Us.html">About Us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-light" href="Contact Us.html">Contact</a>
+        </li>
+       </ul> 
+    </div>
+  </div>
+</nav>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="slider/099.jpg" class="d-block img-fluid" alt="image">
+      <div class="carousel-caption d-none d-md-block">
+       
+       
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="slider/097.jpg" class="d-block w-100" alt="image">
+      <div class="carousel-caption d-none d-md-block">
+         
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="slider/o98.jpg" class="d-block w-100" alt="image">
+      <div class="carousel-caption d-none d-md-block">
+       
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</header>
+
+
+
+
+
+
+ <div class="jumbotron jumbotron-fluid ">
+  <div class="container">
+    <h1 class="display-4 d-flex justify-content-center mt-5">Art &nbsp;<span class="text-danger" >creativity</span></h1>
+    <p class="leadd-flex text-center text-dark">Art and creativity  are important forms of human expression that allow individuals to convey their emotions, ideas, and experiences. They come in many forms including visual arts, performing arts, and literary arts, and are driven by creativity, which enables artists to imagine new possibilities. Art reflects cultural values, connects people, and has the power to shape the world around us.</p>
+  </div>
+</div>
+<div class="container-fluid my-5 bg-danger">
+ <section>
+  
+  <img src="jjk.jpg" alt="image">
+  <article>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </article>
+</section></div>
+
+<div class="container">
+  
+      <div class="card col-md-12 p-3 my-5 ">
+        <div class="row ">
+          <div class="col-md-8">
+            <div class="card-block">
+              <h1 class="card-title text-right text-danger">Colorful&nbsp;<span class="text-dark">ART</span></h1>
+              <p class="card-text text-justify text-dark">Colorful art can certainly have the ability to evoke happiness in some people. Color is known to have a strong impact on emotions, and bright, vivid colors can trigger positive feelings and bring joy to those who view the art. However, this is subjective and depends on personal preferences, cultural background, and individual experiences. Some people might find solace in more muted or neutral color palettes, while others might find happiness in more bold and vibrant hues.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img class="w-100" src="slider/gg.jpg">
+          </div>
+        </div>
+      </div>
+     
+    </div>
+</div>
+<div class="container-fluid bg-danger text-center mb-1">
+  <h2 class="text-warning">Follow Us </h2>
+  
+  <a style="color: white; "href="mailto:cresketchworld45@gmail.com">&#9993;cresketchworld45@gmail.com</a>
+
+  <a style="color: white; "href="https://www.facebook.com/profile.php?id=100066639687213&mibextid=ZbWKwL" target="_blank">
+   &nbsp;&nbsp; <i class="fa-brands fa-facebook"></i>
+  </a>
+  <a style="color: white; "href="https://instagram.com/cresketchworld?igshid=YmMyMTA2M2Y=" target="_blank">
+    &nbsp;&nbsp;<i class="fa-brands fa-instagram"></i>
+  </a>
+  <a style="color: white;" href="https://youtube.com/@ProfessionalArt" target="_blank">
+    &nbsp;&nbsp;<i class="fa-brands fa-youtube"></i>
+  </a>
+
+   <div class="copyright text-lg-center">
+                        <p>@ Copyright reserved to cresketchworld
+. Proudly Crafted by <a href="https://kaurbflora.dcms.site//">FloraKaurb</a> </p>
+                    </div>
+</div>
+
+
+</div>
+
+
+<!-- <div class="sidebar">
+  <div class="social facebook">
+    <a href=" https://www.facebook.com " target="_blank">
+      <p>Like on Facebook <i class="fa fa-facebook "></i> </p>
+    </a>
+  </div>
+  <div class="social twitter">
+    <a href=" https://www.twitter.com " target="_blank">
+      <p>Follow on Twitter<i class="fa fa-twitter"></i> </p>
+    </a>
+  </div>
+  <div class="social google">
+    <a href=" https://www.plus.google.com " target="_blank">
+      <p>&nbspAdd on Google+<i class="fa fa-google-plus"></i> </p>
+    </a>
+  </div>
+</div> -->
+ 
+
+
+
+
+
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+ 
+</body>
+</html>

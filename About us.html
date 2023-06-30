@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html id="top">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/76901c1c8a.js" crossorigin="anonymous"></script>
+
+
+	<title>About us</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+   <script>
+      
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+  </script>
+
+	<style>
+		   body{
+      background-image: url("https://img.freepik.com/premium-vector/colorful-pastel-watercolor-background_3785-169.jpg?w=2000");
+      background-size: cover;
+
+    }
+
+    h1{
+      font-family: 'Dancing Script', cursive;
+    }	
+
+
+       h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {}
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: none;
+            outline: none;
+        }
+        
+        a,
+        a:active,
+        a:focus {
+            color: #6f6f6f;
+            text-decoration: none;
+            transition-timing-function: ease-in-out;
+            -ms-transition-timing-function: ease-in-out;
+            -moz-transition-timing-function: ease-in-out;
+            -webkit-transition-timing-function: ease-in-out;
+            -o-transition-timing-function: ease-in-out;
+            transition-duration: .2s;
+            -ms-transition-duration: .2s;
+            -moz-transition-duration: .2s;
+            -webkit-transition-duration: .2s;
+            -o-transition-duration: .2s;
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        img {
+    max-width: 100%;
+    height: auto;
+}
+        section {
+            padding: 60px 0;
+           /* min-height: 100vh;*/
+        }
+
+.sec-title{
+  position:relative;
+  z-index: 1;
+  margin-bottom:60px;
+}
+
+.sec-title .title{
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  color: #00aeef;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.sec-title h2{
+  position: relative;
+  display: block;
+  font-size:40px;
+  line-height: 1.28em;
+  color: #222222;
+  font-weight: 600;
+  padding-bottom:18px;
+}
+
+.sec-title h2:before{
+  position:absolute;
+  content:'';
+  left:0px;
+  bottom:0px;
+  width:50px;
+  height:3px;
+  background-color:#d1d2d6;
+}
+
+.sec-title .text{
+  position: relative;
+  font-size: 16px;
+  line-height: 26px;
+  color: black;
+  font-weight: 400;
+  margin-top: 35px;
+}
+
+.sec-title.light h2{
+  color: #ffffff;
+}
+
+.sec-title.text-center h2:before{
+  left:50%;
+  margin-left: -25px;
+}
+
+.list-style-one{
+  position:relative;
+}
+
+.list-style-one li{
+  position:relative;
+  font-size:16px;
+  line-height:26px;
+  color: #222222;
+  font-weight:400;
+  padding-left:35px;
+  margin-bottom: 12px;
+}
+
+.list-style-one li:before {
+    content: "\f058";
+    position: absolute;
+    left: 0;
+    top: 0px;
+    display: block;
+    font-size: 18px;
+    padding: 0px;
+    color: #ff2222;
+    font-weight: 600;
+    -moz-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1.6;
+    font-family: "Font Awesome 5 Free";
+}
+
+.list-style-one li a:hover{
+  color: #44bce2;
+}
+
+.btn-style-one{
+  position: relative;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 30px;
+  color: #ffffff;
+  padding: 10px 30px;
+  font-weight: 600;
+  overflow: hidden;
+  letter-spacing: 0.02em;
+  background-color: #00aeef;
+}
+
+.btn-style-one:hover{
+  background-color: #0794c9;
+  color: #ffffff;
+}
+.about-section{
+  position: relative;
+  padding: 120px 0 70px;
+}
+
+.about-section .sec-title{
+  margin-bottom: 45px;
+}
+
+.about-section .content-column{
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.about-section .content-column .inner-column{
+  position: relative;
+  padding-left: 30px;
+}
+
+.about-section .text{
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 26px;
+  color: black;
+  font-weight: 400;
+}
+
+.about-section .list-style-one{
+  margin-bottom: 45px;
+}
+
+.about-section .btn-box{
+  position: relative;
+}
+
+.about-section .btn-box a{
+  padding: 15px 50px;
+}
+
+.about-section .image-column{
+  position: relative;
+}
+
+.about-section .image-column .text-layer{
+    position: absolute;
+    right: -110px;
+    top: 50%;
+    font-size: 325px;
+    line-height: 1em;
+    color: black;
+    margin-top: -175px;
+    font-weight: 500;
+}
+
+.about-section .image-column .inner-column{
+  position: relative;
+  padding-left: 80px;
+  padding-bottom: 0px;
+}
+.about-section .image-column .inner-column .author-desc{
+    position: absolute;
+    bottom: 16px;
+    z-index: 1;
+    background: orange;
+    padding: 10px 15px;
+    left: 96px;
+    width: calc(100% - 152px);
+    border-radius: 50px;
+}
+.about-section .image-column .inner-column .author-desc h2{
+    font-size: 21px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff;
+  margin: 0;
+}
+.about-section .image-column .inner-column .author-desc span{
+    font-size: 16px;
+    letter-spacing: 6px;
+    text-align: center;
+    color: #fff;
+  display: block;
+  font-weight: 400;
+}
+.about-section .image-column .inner-column:before{
+    content: '';
+    position: absolute;
+    width: calc(50% + 80px);
+    height: calc(100% + 160px);
+    top: -80px;
+    left: -3px;
+    background: transparent;
+    z-index: 0;
+    border: 44px solid #00aeef;
+}
+
+.about-section .image-column .image-1{
+  position: relative;
+}
+.about-section .image-column .image-2{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.about-section .image-column .image-2 img,
+.about-section .image-column .image-1 img{
+  box-shadow: 0 30px 50px rgba(8,13,62,.15);
+      border-radius: 46px;
+}
+
+
+.about-section .image-column .video-link .link:hover{
+  background-color: #191e34;
+  color: #f
+
+  }
+
+  a{
+  text-decoration: none;
+  color: white;
+}
+
+.logos{
+  height: 100px;
+  width: 100px;
+  z-index: 2;
+  position: absolute;
+  background-color:white;
+  background-image: url("csworldlogo.png");
+  background-size: cover;
+  top: 0px ;
+  border-radius: 0px 0px 30px 30px;
+  box-shadow: 5px 5px 5px gray;
+  opacity: ;
+}
+.cre{
+  font-style:italic;
+  color: white;
+  margin-left: 110px;
+  font-size:25px;
+   
+}
+
+
+.fa-facebook:hover{
+  cursor: pointer;
+  color: #5851DB;
+}
+
+
+.fa-instagram:hover{
+  cursor: pointer;
+  color: purple;
+}
+
+.fa-youtube:hover{
+  cursor: pointer;
+  color: #FF0000;
+}
+
+}
+
+ #scroll {
+    position:fixed;
+    z-index: 9;
+    right:10px;
+    bottom:12px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#ffc107;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+
+
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+
+
+
+}
+#scroll:hover {
+    background-color:#023020;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+	</style>
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+  <a href="#" id="scroll" style="display: none;"><span></span></a>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-danger px-2 fixed-top my-1 ">
+  <div class="container-fluid  bg-danger">
+    <a class="navbar-brand " href="index.html"><div class="cre">Cresketchworld</div></a><div class="logos"></div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
+        <li class="nav-item">
+          <a class="nav-link active text-warning" aria-current="page" href="index.html">Home</a>
+
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Art Gallery
+          </a>
+          <ul class="dropdown-menu text-center" aria-labelledby="Art Gallery">
+            <li><a class="dropdown-item" href="WaterColor Portrait.html">WaterColor Portrait</a></li>
+             <li><a class="dropdown-item" href="portrait.html">Portrait</a></li>
+            <li><a class="dropdown-item" href="drawings.html">Drawing</a></li>
+            <li><a class="dropdown-item" href="painting.html">Painting</a></li>
+          </ul>
+        </li>
+      
+
+        <li class="nav-item">
+          <a class="nav-link text-light" href="About Us.html">About Us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-light" href="Contact Us.html">Contact</a>
+        </li>
+       </ul> 
+    </div>
+  </div>
+</nav>
+
+
+<section class="about-section m-5">
+        <div class="container py-4">
+            <div class="row">                
+                <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2">
+                    <div class="inner-column">
+                        <div class="sec-title">
+                           
+                            <h2>About Us</h2>
+                        </div>
+                        <div class="text">My self Komal Chaurasia.
+I am B.F.A. graduate student from C.S.J.M.U.Kanpur </div>
+                      <div class="text">
+                        I shown real feelings in my painting .<br>
+
+                      I am Portrait Artist, Logo Artist, Graphic Designer.
+                      </div>
+                        <div class="btn-box">
+                            <a href="Contact Us.html" class="theme-btn btn-style-one">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Column -->
+                <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner-column wow fadeInLeft">
+                      <div class="author-desc">
+                        <h2>Komal Chaurasia</h2>
+                        <span>Artist</span>
+                      </div>
+                        <figure class="image-1"><a href="#" class="lightbox-image" data-fancybox="images"><img title="Komal Chaurasia" src="Z.jpg" alt=""></a></figure>
+                     
+                    </div>
+                </div>
+          
+    </section>
+
+    <div class="container-fluid bg-danger text-center ">
+  <h2 class="text-warning">Follow Us </h2>
+    <a style="color: white; "href="mailto:dkomal47092@gmail.com">&#9993;dkomal47092@gmail.com </a>
+
+  <a style="color: white; "href="https://www.facebook.com/profile.php?id=100066639687213&mibextid=ZbWKwL" target="_blank">
+   &nbsp;&nbsp; <i class="fa-brands fa-facebook"></i>
+  </a>
+  <a style="color: white; "href="https://instagram.com/cresketchworld?igshid=YmMyMTA2M2Y=" target="_blank">
+    &nbsp;&nbsp;<i class="fa-brands fa-instagram"></i>
+  </a>
+  <a style="color: white; " href="https://youtube.com/@ProfessionalArt" target="_blank">
+    &nbsp;&nbsp;<i class="fa-brands fa-youtube"></i>
+  </a>
+   <div class="copyright text-lg-center">
+                        <p>@ Copyright reserved to cresketchworld
+. Proudly Crafted by <a href="https://kaurbflora.dcms.site//">FloraKaurb</a> </p>
+                    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

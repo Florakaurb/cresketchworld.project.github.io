@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/76901c1c8a.js" crossorigin="anonymous"></script>
+	<title>painting</title>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <script>
+      
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+  </script>
+	<style>
+			   body{
+      background-image: url("https://img.freepik.com/premium-vector/colorful-pastel-watercolor-background_3785-169.jpg?w=2000");
+      background-size: cover;
+
+    }
+    h1{
+      font-family: 'Dancing Script', cursive;
+    }
+    /*.carousel-item img{
+      width: 100%;
+      height: 80vh;
+
+   }
+ 
+*/
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  background:#dc3545;
+  padding: 15px;
+}
+.container img {
+  width: 100%;
+  display: block;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  transition: all 100ms ease-out;
+}
+.container img:hover {
+  transform: scale(1.04);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+
+
+/* Footer */
+
+.footer{
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+.footer p {
+    margin: 10px 0;
+    font-family: 'Raleway', 'Lucida Sans Regular', 'Lucida  Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footer .fa-heart{
+    color: red;
+}
+.footer .fa-codepen{
+  color:#fff
+}
+.footer a {
+   color: #3c97bf;
+   text-decoration: none;
+  margin-right:5px;
+}
+
+
+
+
+a{
+  text-decoration: none;
+  color: white;
+}
+.logos{
+  height: 100px;
+  width: 100px;
+  z-index: 2;
+  position: absolute;
+  background-color:white;
+  background-image: url("csworldlogo.png");
+  background-size: cover;
+  top: 0px ;
+  border-radius: 0px 0px 30px 30px;
+  box-shadow: 5px 5px 5px gray;
+  opacity: ;
+}
+.cre{
+  font-style:italic;
+  color: white;
+  margin-left: 110px;
+  font-size:25px;
+   
+}
+
+#scroll {
+    position:fixed;
+    z-index: 9;
+    right:10px;
+    bottom:15px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#ffc107;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+
+
+}
+
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+
+
+
+}
+#scroll:hover {
+    background-color:#023020;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+
+
+.fa-facebook:hover{
+  cursor: pointer;
+  color: #5851DB;
+}
+
+
+.fa-instagram:hover{
+  cursor: pointer;
+  color: purple;
+}
+
+.fa-youtube:hover{
+  cursor: pointer;
+  color: #FF0000;
+}
+
+
+
+
+
+
+
+
+	</style>
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+ <a href="#" id="scroll" style="display: none;"><span></span></a>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-danger px-2 fixed-top my-1 ">
+  <div class="container-fluid  bg-danger">
+    <a class="navbar-brand " href="index.html"><div class="cre">Cresketchworld</div></a><div class="logos"></div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
+        <li class="nav-item">
+          <a class="nav-link active text-warning" aria-current="page" href="index.html">Home</a>
+
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Art Gallery
+          </a>
+          <ul class="dropdown-menu text-center" aria-labelledby="Art Gallery">
+            <li><a class="dropdown-item" href="WaterColor Portrait.html">WaterColor Portrait</a></li>
+             <li><a class="dropdown-item" href="portrait.html">Portrait</a></li>
+            <li><a class="dropdown-item" href="drawings.html">Drawing</a></li>
+            <li><a class="dropdown-item" href="painting.html">Painting</a></li>
+          </ul>
+        </li>
+      
+
+        <li class="nav-item">
+          <a class="nav-link text-light" href="About Us.html">About Us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-light" href="Contact Us.html">Contact</a>
+        </li>
+       </ul> 
+    </div>
+  </div>
+</nav>
+    <!-- <h1> "Painting is the most beautiful of all arts."</h1> -->
+
+
+<div class="container-fluid px-5 py-5">
+ <h1 class="text-center py-5 mt-3"> &nbsp;  &nbsp;&nbsp; I hope that you enjoy my  &nbsp; <span class="text-danger">creativity and Painting.</span></h1>
+    
+  </div>
+
+
+ 
+
+<div class="container my-2 ">
+  <img src="KOMAL PIC ART/painting66/24 (FILEminimizer).jpg">
+  <img src="KOMAL PIC ART/painting66/21 (FILEminimizer).jpg">
+  <img src="KOMAL PIC ART/painting66/26 (FILEminimizer).jpg">
+  <img src="KOMAL PIC ART/painting66/23 (FILEminimizer).jpg">
+  <img src="KOMAL PIC ART/painting66/22 (FILEminimizer).jpg">
+  <img src="KOMAL PIC ART/painting66/25 (FILEminimizer).jpg">
+  
+</div>
+  
+ 
+
+
+
+
+<div class="container-fluid bg-danger text-center mb-2">
+  <h2 class="text-warning">Follow Us </h2>
+  
+  <a style="color: white; "href="mailto:dkomal47092@gmail.com">&#9993;dkomal47092@gmail.com</a>
+
+  <a style="color: white; "href="https://www.facebook.com/profile.php?id=100066639687213&mibextid=ZbWKwL" target="_blank">
+   &nbsp;&nbsp; <i class="fa-brands fa-facebook"></i>
+  </a>
+  <a style="color: white; "href="https://instagram.com/cresketchworld?igshid=YmMyMTA2M2Y=" target="_blank">
+    &nbsp;&nbsp;<i class="fa-brands fa-instagram"></i>
+  </a>
+  <a style="color: white;" href="https://youtube.com/@ProfessionalArt" target="_blank">
+    &nbsp;&nbsp;<i class="fa-brands fa-youtube"></i>
+  </a>
+   <div class="copyright text-lg-center">
+                        <p>@ Copyright reserved to cresketchworld
+. Proudly Crafted by <a href="https://kaurbflora.dcms.site//">FloraKaurb</a> </p>
+                    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>
